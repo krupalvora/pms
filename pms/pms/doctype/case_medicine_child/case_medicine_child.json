@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2022-03-18 23:10:30.827099",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medecine_name",
+  "times",
+  "days",
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "medecine_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "medecine name",
+   "options": "medicine",
+   "search_index": 1
+  },
+  {
+   "fieldname": "times",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "times",
+   "search_index": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "category",
+   "options": "C\nA\nS\nO",
+   "search_index": 1
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "days",
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-19 12:33:09.495778",
+ "modified_by": "Administrator",
+ "module": "pms",
+ "name": "case medicine child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

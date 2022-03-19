@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "autoname": "format:{p_id}-{DD}{MM}{YY}-{#####}",
+ "creation": "2022-03-18 22:42:21.793283",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "c_date",
+  "column_break_2",
+  "c_time",
+  "section_break_3",
+  "p_id",
+  "column_break_5",
+  "p_age",
+  "p_gender",
+  "section_break_4",
+  "c_illyness_type",
+  "column_break_10",
+  "c_note",
+  "section_break_16",
+  "table",
+  "c_medicine_note",
+  "c_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "p_id",
+   "fieldtype": "Link",
+   "label": "Patient ID",
+   "options": "patient"
+  },
+  {
+   "fieldname": "c_description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "Today",
+   "fieldname": "c_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "c_time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "c_illyness_type",
+   "fieldtype": "Data",
+   "label": "Illyness Type"
+  },
+  {
+   "fieldname": "c_note",
+   "fieldtype": "Data",
+   "label": "Note"
+  },
+  {
+   "fieldname": "c_medicine_note",
+   "fieldtype": "Data",
+   "label": "Medicine Note"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Medicine List",
+   "options": "case medicine child"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p_age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "p_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "M\nF\nO"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-19 13:38:37.732500",
+ "modified_by": "Administrator",
+ "module": "pms",
+ "name": "case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

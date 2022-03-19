@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "autoname": "format:{p_name}-{#####}",
+ "creation": "2022-03-18 22:05:06.851535",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "p_name",
+  "p_gender",
+  "column_break_3",
+  "p_age",
+  "p_weight",
+  "section_break_5",
+  "p_number",
+  "column_break_8",
+  "p_email",
+  "section_break_8",
+  "p_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "p_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "p_age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "p_weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "p_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "M\nF\nO"
+  },
+  {
+   "fieldname": "p_number",
+   "fieldtype": "Data",
+   "label": "Number",
+   "length": 10
+  },
+  {
+   "fieldname": "p_email",
+   "fieldtype": "Data",
+   "label": " Email"
+  },
+  {
+   "fieldname": "p_details",
+   "fieldtype": "Text",
+   "label": "Details"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-18 22:34:52.445582",
+ "modified_by": "Administrator",
+ "module": "pms",
+ "name": "patient",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
