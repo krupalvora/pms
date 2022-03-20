@@ -11,7 +11,10 @@
   "c_time",
   "section_break_3",
   "p_id",
+  "p_weight",
+  "c_fees",
   "column_break_5",
+  "p_name",
   "p_age",
   "p_gender",
   "section_break_4",
@@ -85,11 +88,13 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "p_id.p_age",
    "fieldname": "p_age",
    "fieldtype": "Data",
    "label": "Age"
   },
   {
+   "fetch_from": "p_id.p_gender",
    "fieldname": "p_gender",
    "fieldtype": "Select",
    "label": "Gender",
@@ -102,11 +107,28 @@
   {
    "fieldname": "column_break_2",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c_fees",
+   "fieldtype": "Int",
+   "label": "Fees"
+  },
+  {
+   "fetch_from": "p_id.p_name",
+   "fieldname": "p_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fetch_from": "p_id.p_weight",
+   "fieldname": "p_weight",
+   "fieldtype": "Data",
+   "label": "Weight"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-19 13:38:37.732500",
+ "modified": "2022-03-20 21:16:47.782055",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "case",

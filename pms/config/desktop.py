@@ -7,7 +7,7 @@ def get_data():
 		{
 			"category": "Modules",
 			"module_name": "pms",
-			"reverse": 1,
+			"reverse": 1,	
 			"color": "grey",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
