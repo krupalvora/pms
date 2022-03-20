@@ -128,7 +128,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-20 21:16:47.782055",
+ "modified": "2022-03-20 23:26:13.593346",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "case",
@@ -143,6 +143,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Doctor",
    "share": 1,
    "write": 1
   }
