@@ -1,0 +1,34 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2022-03-23 17:58:03.419845",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "case",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Date : {{c_date}}\nPatient name : {{p_name}} ID - {{p_id}}\nDisease type : {{c_illyness_type}}",
+ "modified": "2022-03-23 18:19:10.857757",
+ "modified_by": "Administrator",
+ "module": "pms",
+ "name": "doctor-noti",
+ "owner": "Administrator",
+ "print_format": "doctor-print",
+ "recipients": [
+  {
+   "cc": "{{doc.p_email}}",
+   "receiver_by_document_field": "user",
+   "receiver_by_role": "Doctor"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Krupal vora",
+ "sender_email": "mg9417054@gmail.com",
+ "set_property_after_alert": "",
+ "subject": "{{doc.name}} case"
+}

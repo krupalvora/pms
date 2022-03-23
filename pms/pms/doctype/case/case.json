@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "user",
   "c_date",
   "column_break_2",
   "c_time",
@@ -15,6 +16,7 @@
   "c_fees",
   "column_break_5",
   "p_name",
+  "p_email",
   "p_age",
   "p_gender",
   "section_break_4",
@@ -24,7 +26,8 @@
   "section_break_16",
   "table",
   "c_medicine_note",
-  "c_description"
+  "c_description",
+  "d_contact"
  ],
  "fields": [
   {
@@ -109,6 +112,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "user.fees",
    "fieldname": "c_fees",
    "fieldtype": "Int",
    "label": "Fees"
@@ -124,11 +128,33 @@
    "fieldname": "p_weight",
    "fieldtype": "Data",
    "label": "Weight"
+  },
+  {
+   "fetch_from": "p_id.p_email",
+   "fieldname": "p_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Email"
+  },
+  {
+   "default": "user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "user",
+   "options": "User"
+  },
+  {
+   "fetch_from": "user.phone",
+   "fieldname": "d_contact",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "d contact"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-20 23:26:13.593346",
+ "modified": "2022-03-23 18:23:18.280989",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "case",
