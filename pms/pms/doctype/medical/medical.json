@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:M-{medical_name}-{####}",
+ "creation": "2022-03-25 12:02:17.303526",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medical_name",
+  "ratings",
+  "latitude",
+  "longitude",
+  "maps"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_name",
+   "fieldtype": "Data",
+   "label": "Medical Name"
+  },
+  {
+   "fieldname": "ratings",
+   "fieldtype": "Rating",
+   "label": "Ratings"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "maps",
+   "fieldtype": "Geolocation",
+   "label": "Maps"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-25 12:23:38.512163",
+ "modified_by": "Administrator",
+ "module": "pms",
+ "name": "medical",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

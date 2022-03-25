@@ -1,8 +1,7 @@
 {
  "attach_print": 1,
  "channel": "Email",
- "condition": "",
- "creation": "2022-03-23 17:58:03.419845",
+ "creation": "2022-03-24 19:59:16.913613",
  "days_in_advance": 0,
  "docstatus": 0,
  "doctype": "Notification",
@@ -11,24 +10,22 @@
  "event": "Save",
  "idx": 0,
  "is_standard": 1,
- "message": "Add your message here.",
- "modified": "2022-03-24 17:29:17.774949",
+ "message": "<p>Date :{{doc.c_date}}<br>\nPatent ID :{{doc.p_id}}<br>\nIllyness type :{{doc.c_illyness_type}}<br>\n<br>\nDoctor : {{doc.user}}<br>\ncontact :{{doc.d_contact}}</p><p></p>",
+ "modified": "2022-03-24 19:59:16.913613",
  "modified_by": "Administrator",
  "module": "pms",
- "name": "doctor-noti",
+ "name": "email-noti",
  "owner": "Administrator",
  "print_format": "doctor-print",
  "recipients": [
   {
    "cc": "{{doc.p_email}}",
-   "receiver_by_document_field": "user",
    "receiver_by_role": "Doctor"
   }
  ],
- "send_system_notification": 1,
+ "send_system_notification": 0,
  "send_to_all_assignees": 0,
  "sender": "Krupal vora",
  "sender_email": "mg9417054@gmail.com",
- "set_property_after_alert": "",
- "subject": "{{doc.name}} case"
+ "subject": "Case ::{{ doc.name }}"
 }

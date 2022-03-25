@@ -26,6 +26,7 @@
   "section_break_16",
   "table",
   "c_medicine_note",
+  "medical",
   "c_description",
   "d_contact"
  ],
@@ -33,8 +34,10 @@
   {
    "fieldname": "p_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Patient ID",
-   "options": "patient"
+   "options": "patient",
+   "reqd": 1
   },
   {
    "fieldname": "c_description",
@@ -60,7 +63,9 @@
   {
    "fieldname": "c_illyness_type",
    "fieldtype": "Data",
-   "label": "Illyness Type"
+   "in_list_view": 1,
+   "label": "Illyness Type",
+   "reqd": 1
   },
   {
    "fieldname": "c_note",
@@ -80,7 +85,8 @@
   },
   {
    "fieldname": "section_break_16",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Cure"
   },
   {
    "fieldname": "section_break_3",
@@ -115,7 +121,9 @@
    "fetch_from": "user.fees",
    "fieldname": "c_fees",
    "fieldtype": "Int",
-   "label": "Fees"
+   "in_list_view": 1,
+   "label": "Fees",
+   "reqd": 1
   },
   {
    "fetch_from": "p_id.p_name",
@@ -150,11 +158,17 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "d contact"
+  },
+  {
+   "fieldname": "medical",
+   "fieldtype": "Link",
+   "label": "Medical",
+   "options": "medical"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-23 18:23:18.280989",
+ "modified": "2022-03-25 13:22:52.351852",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "case",

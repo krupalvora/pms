@@ -9,7 +9,7 @@ class case(Document):
 		self.user=frappe.session.user  #frappe.session.user """
 	pass
 		
-		
+
 
 @frappe.whitelist()
 def get_raw_record(medecine_name):

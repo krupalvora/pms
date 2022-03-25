@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2022-03-24 19:08:01.315816",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "medicine",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "sdfsadf\nsdfsa\nsaddfasdf\nsghhhhhhh",
+ "modified": "2022-03-24 19:08:52.915869",
+ "modified_by": "Administrator",
+ "module": "pms",
+ "name": "try",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Doctor"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Krupal vora",
+ "sender_email": "mg9417054@gmail.com",
+ "subject": "try"
+}

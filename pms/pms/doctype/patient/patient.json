@@ -46,12 +46,14 @@
    "fieldname": "p_number",
    "fieldtype": "Data",
    "label": "Number",
-   "length": 10
+   "length": 10,
+   "reqd": 1
   },
   {
    "fieldname": "p_email",
    "fieldtype": "Data",
-   "label": " Email"
+   "label": " Email",
+   "reqd": 1
   },
   {
    "fieldname": "p_details",
@@ -77,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-20 23:29:41.467301",
+ "modified": "2022-03-24 19:02:29.128665",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "patient",
