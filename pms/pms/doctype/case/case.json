@@ -25,10 +25,11 @@
   "c_note",
   "section_break_16",
   "table",
-  "c_medicine_note",
   "medical",
+  "address",
   "c_description",
-  "d_contact"
+  "d_contact",
+  "location"
  ],
  "fields": [
   {
@@ -73,11 +74,6 @@
    "label": "Note"
   },
   {
-   "fieldname": "c_medicine_note",
-   "fieldtype": "Data",
-   "label": "Medicine Note"
-  },
-  {
    "fieldname": "table",
    "fieldtype": "Table",
    "label": "Medicine List",
@@ -86,11 +82,12 @@
   {
    "fieldname": "section_break_16",
    "fieldtype": "Section Break",
-   "label": "Cure"
+   "label": "Medical Assistance"
   },
   {
    "fieldname": "section_break_3",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "column_break_5",
@@ -164,11 +161,23 @@
    "fieldtype": "Link",
    "label": "Medical",
    "options": "medical"
+  },
+  {
+   "fetch_from": "medical.maps",
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fetch_from": "medical.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-25 13:22:52.351852",
+ "modified": "2022-03-25 19:51:13.866411",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "case",

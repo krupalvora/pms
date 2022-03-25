@@ -11,7 +11,7 @@
  "idx": 0,
  "is_standard": 1,
  "message": "<p>Date :{{doc.c_date}}<br>\nPatent ID :{{doc.p_id}}<br>\nIllyness type :{{doc.c_illyness_type}}<br>\n<br>\nDoctor : {{doc.user}}<br>\ncontact :{{doc.d_contact}}</p><p></p>",
- "modified": "2022-03-24 19:59:16.913613",
+ "modified": "2022-03-25 19:59:47.573987",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "email-noti",
@@ -20,6 +20,7 @@
  "recipients": [
   {
    "cc": "{{doc.p_email}}",
+   "receiver_by_document_field": "user",
    "receiver_by_role": "Doctor"
   }
  ],

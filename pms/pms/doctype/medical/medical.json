@@ -9,6 +9,7 @@
  "field_order": [
   "medical_name",
   "ratings",
+  "address",
   "latitude",
   "longitude",
   "maps"
@@ -38,11 +39,16 @@
    "fieldname": "maps",
    "fieldtype": "Geolocation",
    "label": "Maps"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-25 12:23:38.512163",
+ "modified": "2022-03-25 19:37:07.791095",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "medical",

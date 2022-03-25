@@ -10,7 +10,8 @@
   "times",
   "days",
   "category",
-  "description"
+  "description",
+  "quantity"
  ],
  "fields": [
   {
@@ -38,11 +39,17 @@
    "fieldname": "days",
    "fieldtype": "Data",
    "label": "days"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "quantity"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-20 23:29:57.059345",
+ "modified": "2022-03-25 19:54:17.607403",
  "modified_by": "Administrator",
  "module": "pms",
  "name": "medicine",
